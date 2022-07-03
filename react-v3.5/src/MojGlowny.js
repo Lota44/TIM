@@ -294,10 +294,9 @@ export default function MyMainComponent(){
             date.getFullYear() + '-' +
             (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()) + '-' +
             (date.getDay() < 10 ? '0' + date.getDay() : date.getDay())
-
         console.log(author, genre, name)
 
-        await axios.post(ALBUM_REST_API_URL, {}, {params: {author, genre, name, release_date}})
+        await axios.post(ALBUM_REST_API_URL, {}, {params: {author, genre, name}})
             .then(res => {
                 console.log('album added')
                 console.log(res.data)
@@ -349,7 +348,7 @@ export default function MyMainComponent(){
             (date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()) + '-' +
             (date.getDay() < 10 ? '0' + date.getDay() : date.getDay())
 
-        await axios.post('http://localhost:8080/api/track', {}, {params: {author, genre, name, release_date}})
+        await axios.post('http://localhost:8080/api/track', {}, {params: {author, genre, name}})
             .then(async res => {
                 console.log('track added')
                 await axios.post('http://localhost:8080/api/track_of_album', {}, {

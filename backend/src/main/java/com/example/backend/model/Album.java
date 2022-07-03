@@ -26,12 +26,12 @@ public class Album {
 
     public Album(){ }
 
-    public Album(String name, String author, String genre, Date releaseDate){
+    public Album(String name, String author, String genre, String releaseDate){
         super();
         this.name = name;
         this.author = author;
         this.genre = genre;
-        this.release_date = releaseDate;
+        this.release_date = Date.valueOf(releaseDate);
     }
 
     @OneToMany
