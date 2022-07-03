@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_wayPointPin"
+        android:layout_width="81dp"
+        android:layout_height="110dp"
+        android:src="@drawable/map_pin"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_wayPointListAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/iv_wayPointPin"
+        android:text="Adres śmaki i owaki"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_wayPointListDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_wayPointPin"
+        android:layout_below="@+id/tv_wayPointListAddress"
+        android:text="Dystans sraki"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_wayPointNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_wayPointListAddress"
+        android:layout_below="@+id/tv_wayPointListAddress"
+        android:text="X"
+        android:textSize="22sp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
