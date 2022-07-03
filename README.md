@@ -1,2 +1,2 @@
 # TIM
-#na zaliczenie
+na zaliczenie
